@@ -1,0 +1,20 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">/home/eduardo/.dotnet/sdk/8.0.201/MSBuild.dll</s:String>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/DotNetCliExePath/@EntryValue">/home/eduardo/.dotnet/dotnet</s:String>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/MonoExePath/@EntryValue">/usr/lib/dotnet/dotnet</s:String>
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/BuildTool/RecentDotNetCliExePaths/=_002Fusr_002Fbin_002Fdotnet/@EntryIndexedValue">True</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/BuildTool/RecentDotNetCliExePaths/=_002Fusr_002Flib_002Fdotnet_002Fdotnet/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/BuildTool/RecentMonoExePaths/=_002Fusr_002Flib_002Fdotnet_002Fdotnet/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolBuilderDuo/RunBuildOnSolutionLoaded/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolutionBuilderNext/ShouldRestoreNugetPackages/@EntryValue">True</s:Boolean>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=43dda691_002D6c0f_002D478a_002Dbb85_002De96d0f5f3952/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from CategoryTest.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;ProjectFile&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:DeleteCategory/f:DeleteCategoryTest.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFolder&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:UpdateCategory&lt;/ProjectFolder&gt;
+    &lt;ProjectFolder&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:GetCategory&lt;/ProjectFolder&gt;
+    &lt;ProjectFile&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:ListCategories/f:ListCategoriesTest.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:CreateCategory/f:CreateCategoryTest.cs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

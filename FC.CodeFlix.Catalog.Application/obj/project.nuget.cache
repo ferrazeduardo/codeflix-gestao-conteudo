@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "XotuBy5AycGJMR/7YLXPwj8WVdpCcNKVjmAs0haKTo4WWU35joGjGBSQOHQDuxt1eHsMJ3q7FFkO1gX4G3Zp7w==",
+  "success": true,
+  "projectFilePath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/eduardo/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microsoft.codecoverage/17.10.0-preview-24080-01/microsoft.codecoverage.17.10.0-preview-24080-01.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microsoft.net.test.sdk/17.10.0-preview-24080-01/microsoft.net.test.sdk.17.10.0-preview-24080-01.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microsoft.testplatform.objectmodel/17.10.0-preview-24080-01/microsoft.testplatform.objectmodel.17.10.0-preview-24080-01.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/microsoft.testplatform.testhost/17.10.0-preview-24080-01/microsoft.testplatform.testhost.17.10.0-preview-24080-01.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/home/eduardo/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
