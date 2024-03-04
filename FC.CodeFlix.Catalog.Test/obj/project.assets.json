@@ -1880,7 +1880,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Bogus": "35.4.1",
           "FC.CodeFlix.Catalog.Domain": "1.0.0",
+          "FluentAssertions": "7.0.0-alpha.3",
           "FluentValidation": "11.9.0",
           "MediatR": "12.2.0",
           "Microsoft.NET.Test.Sdk": "17.10.0-preview-24080-01"
@@ -1896,6 +1898,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Bogus": "35.4.1",
+          "FluentAssertions": "7.0.0-alpha.3",
           "Microsoft.NET.Test.Sdk": "17.10.0-preview-24080-01"
         },
         "compile": {
@@ -6013,11 +6017,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -6076,5 +6075,25 @@
         "runtimeIdentifierGraphPath": "/home/eduardo/.dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Bogus from 35.4.1 to 35.4.0. Reference the package directly from the project to select a different version. \n FC.CodeFlix.Catalog.Test -> FC.CodeFlix.Catalog.Application -> Bogus (>= 35.4.1) \n FC.CodeFlix.Catalog.Test -> Bogus (>= 35.4.0)",
+      "libraryId": "Bogus",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Bogus from 35.4.1 to 35.4.0. Reference the package directly from the project to select a different version. \n FC.CodeFlix.Catalog.Test -> FC.CodeFlix.Catalog.Domain -> Bogus (>= 35.4.1) \n FC.CodeFlix.Catalog.Test -> Bogus (>= 35.4.0)",
+      "libraryId": "Bogus",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
