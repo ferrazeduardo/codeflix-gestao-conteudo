@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FC.CodeFlix.Catalog.IntegrationTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f5b229c690f2e0d940708ed53ac81181bd6a7c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b93f0ded9c824d421e9e7a4f818b31090686078e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FC.CodeFlix.Catalog.IntegrationTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FC.CodeFlix.Catalog.IntegrationTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

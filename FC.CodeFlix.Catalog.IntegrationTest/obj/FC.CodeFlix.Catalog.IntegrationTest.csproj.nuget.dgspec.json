@@ -4,14 +4,93 @@
     "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/FC.CodeFlix.Catalog.IntegrationTest.csproj": {}
   },
   "projects": {
-    "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/FC.CodeFlix.Catalog.IntegrationTest.csproj": {
+    "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/FC.CodeFlix.Catalog.IntegrationTest.csproj",
-        "projectName": "FC.CodeFlix.Catalog.IntegrationTest",
-        "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/FC.CodeFlix.Catalog.IntegrationTest.csproj",
+        "projectUniqueName": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj",
+        "projectName": "FC.CodeFlix.Catalog.Application",
+        "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj",
         "packagesPath": "/home/eduardo/.nuget/packages/",
-        "outputPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/obj/",
+        "outputPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/eduardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Domain/FC.CodeFlix.Catalog.Domain.csproj": {
+                "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Domain/FC.CodeFlix.Catalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.4.1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[7.0.0-alpha.3, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.10.0-preview-24080-01, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/eduardo/.dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Domain/FC.CodeFlix.Catalog.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Domain/FC.CodeFlix.Catalog.Domain.csproj",
+        "projectName": "FC.CodeFlix.Catalog.Domain",
+        "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Domain/FC.CodeFlix.Catalog.Domain.csproj",
+        "packagesPath": "/home/eduardo/.nuget/packages/",
+        "outputPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/eduardo/.nuget/NuGet/NuGet.Config"
@@ -48,7 +127,148 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.8.0, )"
+              "version": "[17.10.0-preview-24080-01, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/eduardo/.dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Infra.Data.EF/FC.CodeFlix.Catalog.Infra.Data.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Infra.Data.EF/FC.CodeFlix.Catalog.Infra.Data.EF.csproj",
+        "projectName": "FC.CodeFlix.Catalog.Infra.Data.EF",
+        "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Infra.Data.EF/FC.CodeFlix.Catalog.Infra.Data.EF.csproj",
+        "packagesPath": "/home/eduardo/.nuget/packages/",
+        "outputPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Infra.Data.EF/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/eduardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj": {
+                "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/eduardo/.dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/FC.CodeFlix.Catalog.IntegrationTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/FC.CodeFlix.Catalog.IntegrationTest.csproj",
+        "projectName": "FC.CodeFlix.Catalog.IntegrationTest",
+        "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/FC.CodeFlix.Catalog.IntegrationTest.csproj",
+        "packagesPath": "/home/eduardo/.nuget/packages/",
+        "outputPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.IntegrationTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/eduardo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj": {
+                "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Application/FC.CodeFlix.Catalog.Application.csproj"
+              },
+              "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Infra.Data.EF/FC.CodeFlix.Catalog.Infra.Data.EF.csproj": {
+                "projectPath": "/home/eduardo/RiderProjects/codeflixnovo/codeflix-gestao-conteudo/FC.CodeFlix.Catalog.Infra.Data.EF/FC.CodeFlix.Catalog.Infra.Data.EF.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.4.1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[7.0.0-alpha.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.0-preview.6.23329.4, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.10.0-preview-24080-01, )"
             },
             "coverlet.collector": {
               "target": "Package",

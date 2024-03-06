@@ -16,5 +16,6 @@
     &lt;ProjectFolder&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:GetCategory&lt;/ProjectFolder&gt;
     &lt;ProjectFile&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:ListCategories/f:ListCategoriesTest.cs&lt;/ProjectFile&gt;
     &lt;ProjectFile&gt;64A79AB7-8A07-43B9-92CF-642ACC00EEB1/d:Application/d:Category/d:CreateCategory/f:CreateCategoryTest.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;8B1391BB-424A-4A4B-B1B0-B92F81A94B07/d:Infra.Data.EF/d:Repositories/d:CategoryRepository/f:CategoryRepositoryTest.cs&lt;/ProjectFile&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
