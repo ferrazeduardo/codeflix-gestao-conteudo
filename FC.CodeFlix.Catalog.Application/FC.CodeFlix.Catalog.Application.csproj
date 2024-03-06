@@ -28,8 +28,4 @@
       <Compile Remove="UsesCases\Category\Common\ListCategoriesTest.cs" />
     </ItemGroup>
 
-    <ItemGroup>
-      <None Remove=".gitignore" />
-    </ItemGroup>
-
 </Project>
