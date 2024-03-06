@@ -10,4 +10,7 @@ public class BaseFixture
     }
 
     protected Faker Faker { get; set; }
+    
+    public bool GetRandomBoolean()
+        => new Random().NextDouble() < 0.5;
 }

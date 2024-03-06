@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.CodeFlix.Catalog.Test", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.CodeFlix.Catalog.IntegrationTest", "FC.CodeFlix.Catalog.IntegrationTest\FC.CodeFlix.Catalog.IntegrationTest.csproj", "{8B1391BB-424A-4A4B-B1B0-B92F81A94B07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FC.CodeFlix.Catalog.Infra.Data.EF", "FC.CodeFlix.Catalog.Infra.Data.EF\FC.CodeFlix.Catalog.Infra.Data.EF.csproj", "{A363EFA6-1AB8-47B2-89B3-E2B446857881}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,7 @@ Global
 		{D0000C21-16F6-47E9-83D8-8563EC762405} = {BAB42308-632E-42F8-9529-911D652C3B0E}
 		{64A79AB7-8A07-43B9-92CF-642ACC00EEB1} = {0692DAA2-5D5D-4B1E-8412-DC23E4394300}
 		{8B1391BB-424A-4A4B-B1B0-B92F81A94B07} = {0692DAA2-5D5D-4B1E-8412-DC23E4394300}
+		{A363EFA6-1AB8-47B2-89B3-E2B446857881} = {BAB42308-632E-42F8-9529-911D652C3B0E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1A1809AD-B9C1-4AF7-BB0C-69E06E033CE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -40,5 +43,9 @@ Global
 		{8B1391BB-424A-4A4B-B1B0-B92F81A94B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B1391BB-424A-4A4B-B1B0-B92F81A94B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B1391BB-424A-4A4B-B1B0-B92F81A94B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A363EFA6-1AB8-47B2-89B3-E2B446857881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A363EFA6-1AB8-47B2-89B3-E2B446857881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A363EFA6-1AB8-47B2-89B3-E2B446857881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A363EFA6-1AB8-47B2-89B3-E2B446857881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
