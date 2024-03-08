@@ -1,10 +1,5 @@
-using FC.CodeFlix.Catalog.Application.Interfaces;
 using FC.CodeFlix.Catalog.Application.UsesCases.Category.CreateCategory;
-using FC.CodeFlix.Catalog.Domain.Interface.Repository;
 using FC.CodeFlix.Catalog.Test.Application.Category.Common;
-using FC.CodeFlix.Catalog.Test.Common;
-using FC.CodeFlix.Catalog.Test.Common;
-using Moq;
 
 namespace FC.CodeFlix.Catalog.Test.Application.Category.CreateCategory;
 
