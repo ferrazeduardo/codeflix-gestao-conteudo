@@ -1,3 +1,4 @@
+using FC.CodeFlix.Catalog.Application.Exceptions;
 using FC.CodeFlix.Catalog.Domain.Entity;
 using FC.CodeFlix.Catalog.Domain.Interface.Repository;
 using FC.CodeFlix.Catalog.Domain.SeedWork;
@@ -23,7 +24,11 @@ public class CategoryRepository
 
     public async Task<Category> Get(Guid Id, CancellationToken cancellationToken)
     {
-        return await _categories.FindAsync(new object[] { Id }, cancellationToken);
+        var category = await _categories.FindAsync(new object[] { Id }, cancellationToken);
+
+        NotFoundException.ThrowIfNull(category, $"Category '{Id}' not found");
+
+        return category!;
     }
 
     public Task Delete(Category aggregate, CancellationToken cancellationToken)
