@@ -24,19 +24,19 @@ public class CategoryRepository
 
     public async Task<Category> Get(Guid Id, CancellationToken cancellationToken)
     {
-        var category = await _categories.FindAsync(new object[] { Id }, cancellationToken);
+        var category = await _categories.AsNoTracking().FirstOrDefaultAsync(x => x.Id == Id, cancellationToken);
 
         NotFoundException.ThrowIfNull(category, $"Category '{Id}' not found");
 
         return category!;
     }
 
-    public Task Delete(Category aggregate, CancellationToken cancellationToken)
+    public Task Delete(Category aggregate, CancellationToken _)
     {
-        throw new NotImplementedException();
+        return Task.FromResult(_categories.Remove(aggregate));
     }
 
-    public   Task Update(Category aggregate, CancellationToken cancellationToken)
+    public   Task Update(Category aggregate, CancellationToken _)
     {
        return Task.FromResult(_categories.Update(aggregate));
     }

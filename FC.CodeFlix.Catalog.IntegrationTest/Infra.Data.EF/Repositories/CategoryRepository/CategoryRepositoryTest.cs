@@ -26,7 +26,7 @@ public class CategoryRepositoryTest
         await categoryRepository.Insert(exampleCategory, CancellationToken.None);
         await dbContext.SaveChangesAsync(CancellationToken.None);
 
-        var dbCategory = await dbContext.Categories.FindAsync(exampleCategory.Id);
+        var dbCategory = await (_fixture.CreateDbContext()).Categories.FindAsync(exampleCategory.Id);
         dbCategory.Should().NotBeNull();
         dbCategory!.Name.Should().Be(exampleCategory.Name);
         dbCategory.Description.Should().Be(exampleCategory.Description);
@@ -46,7 +46,7 @@ public class CategoryRepositoryTest
         await dbContext.AddRangeAsync(exampleCategoriesList);
         await dbContext.SaveChangesAsync(CancellationToken.None);
 
-        var categoryRepository = new Catalog.Infra.Data.EF.Repository.CategoryRepository(dbContext);
+        var categoryRepository = new Catalog.Infra.Data.EF.Repository.CategoryRepository(_fixture.CreateDbContext());
 
         var dbCategory = await categoryRepository.Get(exampleCategory.Id, CancellationToken.None);
 
@@ -76,13 +76,33 @@ public class CategoryRepositoryTest
         await categoryRepository.Update(exampleCategory, CancellationToken.None);
         await dbContext.SaveChangesAsync();
         
-        var category = await dbContext.Categories.FindAsync(exampleCategory.Id, CancellationToken.None);
+        var category = await (_fixture.CreateDbContext()).Categories.FindAsync(exampleCategory.Id, CancellationToken.None);
         category.Should().NotBeNull();
         category!.Name.Should().Be(exampleCategory.Name);
         category!.Id.Should().Be(exampleCategory.Id);
         category.Description.Should().Be(exampleCategory.Description);
         category.IsActive.Should().Be(exampleCategory.IsActive);
         category.CreatedAt.Should().Be(exampleCategory.CreatedAt);
+    }
+    
+    [Fact(DisplayName = nameof(Delete))]
+    [Trait("Integration/Infra.Data", "CategoryRepository - Repositories")]
+    public async Task Delete()
+    {
+        CodeFlixCatalogDbContext dbContext = _fixture.CreateDbContext();
+        var exampleCategory = _fixture.GetExampleCategory();
+        var exampleCategoriesList = _fixture.GetExampleCategoriesList(15);
+        exampleCategoriesList.Add(exampleCategory);
+        await dbContext.AddRangeAsync(exampleCategoriesList);
+        await dbContext.SaveChangesAsync(CancellationToken.None);
+
+        var categoryRepository = new Catalog.Infra.Data.EF.Repository.CategoryRepository(dbContext);
+        
+        await categoryRepository.Delete(exampleCategory, CancellationToken.None);
+        await dbContext.SaveChangesAsync();
+        
+        var category = await (_fixture.CreateDbContext()).Categories.FindAsync(exampleCategory.Id, CancellationToken.None);
+        category.Should().BeNull();
     }
 
     [Fact(DisplayName = nameof(GetThrowIfNotFound))]
