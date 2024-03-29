@@ -58,13 +58,19 @@ public class CategoryRepositoryTestFixture
     public List<Category> GetExampleCategoriesList(int length = 10)
         => Enumerable.Range(1, length).Select(_ => GetExampleCategory()).ToList();
 
-    public CodeFlixCatalogDbContext CreateDbContext()
+    public CodeFlixCatalogDbContext CreateDbContext(bool preserveData = false)
     {
         var dbContext = new CodeFlixCatalogDbContext(
             new DbContextOptionsBuilder<CodeFlixCatalogDbContext>()
                 .UseInMemoryDatabase("integration-tests-db")
                 .Options
         );
+
+        if (preserveData is false)
+            dbContext.Database.EnsureDeleted();
+        
         return dbContext;
     }
+
+
 }

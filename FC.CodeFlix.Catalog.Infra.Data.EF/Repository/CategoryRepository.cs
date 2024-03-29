@@ -36,13 +36,15 @@ public class CategoryRepository
         return Task.FromResult(_categories.Remove(aggregate));
     }
 
-    public   Task Update(Category aggregate, CancellationToken _)
+    public Task Update(Category aggregate, CancellationToken _)
     {
-       return Task.FromResult(_categories.Update(aggregate));
+        return Task.FromResult(_categories.Update(aggregate));
     }
 
-    public Task<SearchOutput<Category>> Search(SearchInput input, CancellationToken cancellationToken)
+    public async Task<SearchOutput<Category>> Search(SearchInput input, CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        var total = await _categories.CountAsync();
+        var items = await _categories.ToListAsync();
+        return new(input.Page, input.PerPage, total, items);
     }
 }
